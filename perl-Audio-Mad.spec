@@ -37,7 +37,7 @@ do przekszta³cania surowych danych mad_fixed_t na u¿yteczne ci±gi.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
