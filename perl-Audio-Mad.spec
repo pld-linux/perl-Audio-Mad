@@ -1,20 +1,21 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	Mad
 Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
 Summary(pl):	Modu³ Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
-Version:	0.4
-Release:	2
+Version:	0.6
+Release:	1
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ecb30a4036c190458c6eb3b940b502a9
+# Source0-md5:	ede73e114efea0956f8abdb4072fa0bf
+BuildRequires:	libmad-devel
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	mad-devel
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
