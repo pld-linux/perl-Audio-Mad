@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Audio
-%define	pnam	Mad
+%define		pdir	Audio
+%define		pnam	Mad
 Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
 Summary(pl):	Modu³ Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
