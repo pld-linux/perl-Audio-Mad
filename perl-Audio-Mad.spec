@@ -35,7 +35,7 @@ do przekszta³cania surowych danych mad_fixed_t na u¿yteczne ci±gi.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
