@@ -8,13 +8,13 @@ Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
 Summary(pl):	Modu³ Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	mad-devel
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,7 +35,8 @@ do przekszta³cania surowych danych mad_fixed_t na u¿yteczne ci±gi.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -52,9 +53,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Audio/Mad.pm
-%{perl_sitearch}/Audio/Mad
-%dir %{perl_sitearch}/auto/Audio/Mad
-%{perl_sitearch}/auto/Audio/Mad/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Audio/Mad/*.so
+%{perl_vendorarch}/Audio/Mad.pm
+%{perl_vendorarch}/Audio/Mad
+%dir %{perl_vendorarch}/auto/Audio/Mad
+%{perl_vendorarch}/auto/Audio/Mad/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Audio/Mad/*.so
 %{_mandir}/man3/*
