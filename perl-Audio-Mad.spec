@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Mad
 Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
-Summary(pl):	Modu³ Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
 Version:	0.6
 Release:	1
@@ -26,12 +26,12 @@ mad_frame, mad_synth, and mad_timer_t are provided. Two addon
 interfaces Mad::Resample and Mad::Dither provide methods for
 manipulating raw mad_fixed_t data into usable strings.
 
-%description -l pl
-Audio::Mad to modu³ Perla stworzony by udostêpniæ abstrakcyjny
+%description -l pl.UTF-8
+Audio::Mad to moduÅ‚ Perla stworzony by udostÄ™pniÄ‡ abstrakcyjny
 interfejs do niskopoziomowej biblioteki dekodera MPEG - mad. Dostarcza
 interfejsy do mad_stream, mad_frame, mad_synth i mad_timer_t. Dwa
-dodatkowe interfejsy Mad::Resample i Mad::Dither udostêpniaj± metody
-do przekszta³cania surowych danych mad_fixed_t na u¿yteczne ci±gi.
+dodatkowe interfejsy Mad::Resample i Mad::Dither udostÄ™pniajÄ… metody
+do przeksztaÅ‚cania surowych danych mad_fixed_t na uÅ¼yteczne ciÄ…gi.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
