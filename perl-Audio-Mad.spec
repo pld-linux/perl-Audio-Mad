@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	Mad
 Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
-Summary(pl.UTF-8):   Moduł Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
+Summary(pl.UTF-8):	Moduł Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
 Version:	0.6
 Release:	1
