@@ -40,6 +40,7 @@ do przekształcania surowych danych mad_fixed_t na użyteczne ciągi.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
