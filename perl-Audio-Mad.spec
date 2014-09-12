@@ -60,6 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Audio/Mad.pm
 %{perl_vendorarch}/Audio/Mad
 %dir %{perl_vendorarch}/auto/Audio/Mad
-%{perl_vendorarch}/auto/Audio/Mad/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/Mad/*.so
 %{_mandir}/man3/*
