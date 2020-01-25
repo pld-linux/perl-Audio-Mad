@@ -4,7 +4,6 @@
 
 %define		pdir	Audio
 %define		pnam	Mad
-%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::Mad Perl module - interface to the mad MPEG decoder library
 Summary(pl.UTF-8):	Moduł Perla Audio::Mad - interfejs do biblioteki dekodera MPEG mad
 Name:		perl-Audio-Mad
